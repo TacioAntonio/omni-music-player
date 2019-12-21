@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #121212;
+  font-family: 'Lato', sans-serif;
+  color: #a0a0a0;
+  display: flex;
+  font-size: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 1px;
+  height: 1px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #121212;
+}
+
+.title {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 64px;
+}
+
+.material-icons.icon {
+  font-size: 64px;
+}
+
+
+.title:hover,
+.title:focus {
+  color: #1db954;
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 56px;
+  }
+
+  .material-icons.icon {
+    font-size: 56px;
+  }
+
+ }
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background: #000000;
+  width: 100%;
+  /* padding: 6px; */
+  -webkit-box-shadow: 0px -2px 3px 3px rgba(0,0,0,0.85);
+  -moz-box-shadow: 0px -2px 3px 3px rgba(0,0,0,0.85);
+  box-shadow: 0px -1px 12px 5px #000000;
+}
+
+.footer-container {
+}
+
+
+
+.material-icons.footer-icon {
+  font-size: 32px;
+  color: #1db954;
+  opacity: .5;
+  cursor: pointer;
+}
+
+.footer-icon:hover {
+  opacity: 1;
+}
+
+.footer-title {
+  font-size: 1em;
+}
+
+.footer-container {
+  position: relative;
+  top: -22px;
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  /* background: black; */
+  width: 100%;
+}
+
+.form-input {
+  position: absolute;
+  background: none;
+  border: none;
+  color: #1ed760;
+  font-size: 14px;
+  font-weight: bold;
+  /* margin-right: 10px; */
+  outline: none;
+  padding: 2px 0;
+  width: 164px;
+  margin-left: -69px;
+  opacity: .4;
+}
+
+
+.form-input:focus {
+  opacity: 1;
+}
+
+.form-input::placeholder {
+  color: #1ed760;
+}
+
+.footer-path {
+  opacity: 0.5;
+}
+
+.footer-path:hover {
+  opacity: 1;
+}
+
+.form-input:focus {
+  border-bottom: 1px solid #1ed760;
+}
+
+
+.list {
+  /* width: 500px;
+  height: 500px; */
+  background: black;
+  display: flex;
+  overflow-x: scroll;
+}
+
+.list-item {
+  padding: 0 12px;
+  padding-top: 12px;
+}
+
+.list-image {
+  width: 250px;
+  height: 250px;
+  opacity: .5;
+  cursor: pointer;
+}
+
+.list-image:hover {
+  opacity: 1;
+}
+
+.list-description {
+  margin-bottom: -56px;
+}
+
+.list-title {
+  position: relative;
+  top: -56px;
+  padding: 6px 0 6px 12px;
+  background: rgba(0, 0, 0, 0.5);
+  max-width: 26ch;
+}
+
+.list-subtitle {
+  position: relative;
+  top: -56px;
+  padding: 2px;
+  background: rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+}
+
+.list-title:hover,
+.list-subtitle:hover,
+.album-title:hover,
+.album-artist:hover,
+.album-counter:hover {
+  color: #16a248;
+}
+
+.contaner {
+}
+
+.container-inner {
+  /* display: flex; */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  /* background: black; */
+  /* -webkit-box-shadow: 0px -2px 3px 3px rgba(0,0,0,0.85);
+  -moz-box-shadow: 0px -2px 3px 3px rgba(0,0,0,0.85);
+  box-shadow: inset 0px -2px 3px 3px rgba(0,0,0,0.85); */
+  overflow-y: scroll;
+}
+
+.album-info {
+  text-align: center;
+}
+
+.album-musics {
+
+}
+
+
+.music {
+  cursor: pointer;
+  display: flex;
+  font-size: 18px;
+  font-weight: 300;
+  transition: background .3s;
+  width: 100%;
+}
+
+.music.active {
+  color: #16a248;
+}
+
+.music.active .music-title {
+  color: #16a248;
+}
+
+.music:hover {
+  background: #000;
+}
+
+.music-number,
+.music-title,
+.music-duration {
+  padding: 10px;
+}
+
+.music-number {
+  margin-right: 20px;
+  min-width: 25px;
+}
+
+.music-number:after {
+  content: '.';
+}
+
+.music-title {
+  color: rgba(255, 255, 255, 0.81);
+  width: 100%;
+}
+
+.music-duration {
+  text-align: right;
+  width: 100%;
+}
+
+.hide {
+  display: none;
+}

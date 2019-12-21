@@ -1,20 +1,27 @@
+const path = require('path');
+const webpack = require('webpack');
+
 module.exports = {
-  entry: './index',
-  output: {
-    library: 'spotifyWrapper',
-    libraryTarget: 'umd',
-    filename: 'spotifyWrapper.js',
+  context: path.resolve(__dirname, './src'),
+  entry: {
+    app: './main.js',
   },
-  devtool: 'source-map',
+  output: {
+    filename: 'bundle.js',
+    path: path.resolve(__dirname, './example'),
+  },
+  devServer: {
+    contentBase: path.resolve(__dirname, './example'),
+  },
   module: {
     rules: [
       {
-        test: /\.m?js$/,
-        exclude: /(node_modules|bower_components)/,
-        use: {
+        test: /\.js$/,
+        exclude: [/node_modules/],
+        use: [{
           loader: 'babel-loader',
-        },
-      },
-    ],
-  },
+        }]
+      }
+    ]
+  }
 };
