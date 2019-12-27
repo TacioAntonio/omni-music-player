@@ -1,7 +1,7 @@
-import SpotifyWrapper from 'spotify-wrapper';
+import SpotifyWrapper from '@tacioantonio/spotify-web-api';
 
 const spotify = new SpotifyWrapper({
-  token: 'BQCu3C2xlwIAEGSjt4Fg243ZDD7GedakFKtVBRqCkfaoqUx3M3ZILt-j3vePEbVvlMFIDz7U452Qs0yWhKoSG2oiaexTclQZwgLXzMEmMXwy5JSDDfkgWhB497ct60Zadrn8ZnCe7URnCgaEOm27ZoN2PLrYVQ-QX6C9HIdyd4KTY0uCwOj6Tft1Fj7UfY0Wazh8nnv9PmpSGy-EAhg4CFIbbB0v_Qoo_hkJcc-L6FHZMIEUeC0B3FvYv7qZbB47urcVAtGrHb-s6lE',
+  token: 'BQAWPc3sf9smC8n1AkXgNtbuoYAv98EWVbR99xl0ZucufgoHOeSNyfInNShfInVW5G2ZPLwMx_yYl4agS51Mb1nlQPgoCo8XXR3YEToNh5p_kXhWmYVmhH0Y_kSuNHTzj6leqIvedRk1ylurEtBILRfEd5qT4Rv2IDJi-Q0Em1q1lYBikRIEEmLE4GsHEnluo_54ymxoLcfr_4Rq4z2nUOdHJ8kHdrptMoI1A6-LiRzCRgrwGUE_v9ivtjVEP2L8Cx94LSs6tZFZXxo',
 });
 
 export default spotify;

@@ -65,10 +65,10 @@
     "webpack-cli": "^3.3.10"
   },
   "dependencies": {
+    "@tacioantonio/spotify-web-api": "^1.0.1",
     "jsdom": "^15.2.1",
     "jsdom-global": "^3.0.2",
     "path": "^0.12.7",
-    "spotify-wrapper": "^2.1.0",
     "webpack-dev-server": "^3.10.0"
   }
 }

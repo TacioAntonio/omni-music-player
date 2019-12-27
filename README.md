@@ -1,7 +1,7 @@
 # Omni music player
 
 ![Omni](https://i.ibb.co/CKjWRtd/Opera-Instant-neo-2019-12-21-160519-localhost.png)
-> Este aplicativo usa a biblioteca [spotify-wrapper](https://www.npmjs.com/package/spotify-wrapper) para obter informações e músicas do Spotify.
+> Este aplicativo usa a biblioteca [@tacioantonio/spotify-web-api](https://www.npmjs.com/package/@tacioantonio/spotify-web-api) para obter informações e músicas do Spotify.
 
 ## Suporte
 

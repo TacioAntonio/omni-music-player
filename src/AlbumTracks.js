@@ -1,3 +1,4 @@
+/* eslint-disable no-param-reassign */
 import convertToHumanTime from './ConvertToHumanTime';
 
 function createMarkup(tracks) {

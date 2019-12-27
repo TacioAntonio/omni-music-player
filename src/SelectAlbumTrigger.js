@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import spotify from './Spotify';
 import renderAlbumInfo from './AlbumInfo';
 import renderAlbumTracks from './AlbumTracks';

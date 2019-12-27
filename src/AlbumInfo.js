@@ -1,3 +1,4 @@
+/* eslint-disable no-param-reassign */
 function createMarkup(data) {
   return (`
     <img class="album-image" src="${data.images[2].url}" alt="${data.name}">

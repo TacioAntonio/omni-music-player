@@ -1,3 +1,5 @@
+/* eslint-disable keyword-spacing */
+/* eslint-disable no-undef */
 const albumTracks = document.getElementById('album-tracks');
 let audioObject = null;
 
